@@ -55,3 +55,4 @@ I want to gain knowledge and skills that will allow me to become a Fron-end deve
 ## Languages:
 
 - Russian - Native
+- English - A1
