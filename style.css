@@ -112,3 +112,19 @@ body {
     height: 3px;
     background: var(--secondary-color);
 }
+/* Списки */
+.contacts-list,
+.skills-list,
+.languages-list {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.contacts-list li,
+.skills-list li,
+.languages-list li {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
