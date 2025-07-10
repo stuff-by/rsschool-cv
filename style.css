@@ -1,42 +1,104 @@
-@font-face {
-  font-family: Roboto;
-  src: url("assets/fonts/OpenSans_Condensed-Regular.ttf");
+:root {
+  --primary-color: #077d11;
+  --secondary-color: #077d11;
+  --text-color: #333;
+  --bg-color: #f9f9f9;
+  --photo-size: 150px;
 }
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
+
+* {
   margin: 0;
   padding: 0;
-  color: #333;
-  background-color: #f9f9f9;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
 }
 
 .header {
-  background: linear-gradient(135deg, #6e48aa, #9d50bb);
-  color: white;
-  padding: 2rem 0;
-  text-align: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 30px;
 }
 
-.header-content {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 0 20px;
+.photo {
+  width: var(--photo-size);
+  height: var(--photo-size);
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--primary-color);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.photo:hover {
+  transform: scale(1.05);
+}
+
+.header-text {
+  flex: 1;
 }
 
 .header h1 {
-  margin: 0;
   font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 10px;
   letter-spacing: 1px;
-  font-family: "Roboto", sans-serif; 
-  font-weight: 400; 
-  text-transform: uppercase; 
+  text-transform: uppercase;
 }
+
 .header h2 {
-  margin: 0.5rem 0 0;
-  font-size: 1.3rem;
-  font-weight: 300;
-  opacity: 0.9;
-  font-family: Arial, sans-serif; 
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--secondary-color);
+  margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+  
+  .photo {
+    margin-bottom: 15px;
+  }
+  
+  .header h1 {
+    font-size: 2rem;
+  }
+  
+  .header h2 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --photo-size: 120px;
+  }
+  
+  .container {
+    padding: 20px;
+  }
+  
+  .header h1 {
+    font-size: 1.8rem;
+  }
 }
