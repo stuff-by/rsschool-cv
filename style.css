@@ -1,4 +1,4 @@
-.flex {
-  height: auto;
-  width: 800px;
+@font-face {
+  font-family: Roboto;
+  src: url("assets/fonts/OpenSans_Condensed-Regular.ttf");
 }
