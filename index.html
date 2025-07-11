@@ -1,12 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
 </head>
-
 <body>
+     <div class="container">
+        <!--навигация--> 
+        <header class="header">
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+                    <li class="nav-item"><a href="#Education" class="nav-link">Education</a></li>
+                    <li class="nav-item"><a href="#About" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                    <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
+                    <li class="nav-item"><a href="#english" class="nav-link">Languages</a></li> 
+                </ul>  
+            </nav>
+            <div class="profile">
+                <img src="image.jpg" alt="Loseu Siarhei" class="photo">
+                <div class="profile-info">
+                    <h1>LOSEU SIARHEI</h1>
+                    <h2>Frontend Developer</h2>
+                </div>
+            </div>
+        </header>
 
+        <main>
+            <!--контакты-->
+            <section id="contacts" class="section">
+                <h2 class="section-title">Contacts</h2>
+                <ul class="contacts-list">
+                    <li> Minsk, Belarus</li>
+                    <li> +375 (29) 639-49-09</li>
+                    <li> <a href="mailto:malinovka3@gmail.com">malinovka3@gmail.com</a></li>
+                    <li> <a href="https://github.com/stuff-by" target="_blank">GitHub</a></li>
+                    <li> <a href="https://t.me/stuff_by" target="_blank">Telegram</a></li>
+                </ul>
+            </section>   
+
+            <!--образование-->
+            <section id="Education" class="section">
+                <h2 class="section-title">Education</h2>
+                <ul class="education-list">
+                    <li>BSEU (2013-2017)</li>
+                </ul>
+            </section>
+
+            <!--о себе-->
+            <section id="summary" class="section">
+                <h2 class="section-title">About</h2>
+                <p>I am 36 years old.
+                    I work a ASO Manager in product IT company.
+                    Decided to become a web developer.
+                    I want to gain knowledge and skills that will allow me to become a Fron-end developer.
+                </p>
+            </section>   
+
+            <!--навыки-->
+            <section id="skills" class="section">
+                <h2 class="section-title">Skills</h2>
+                <ul class="skills-list">
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>GIT, GitHub</li>
+                    <li>VS Code</li>
+                </ul>
+            </section>
+
+            <!--пример кода-->
+            <section id="code" class="section">
+                <h2 class="section-title"> Example code:</h2>
+                <pre>
+                    <code> 
+                        &lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;p&gt;Если бы мы знали, что это такое&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+                    </code>
+                </pre>
+            </section>
+
+            <!--языки-->
+            <section id="English" class="section">
+                <h2 class="section-title">Languages</h2>
+                <li>Belarusian - Native</li>
+                <li>Russian - Native</li>
+                <li>English - A1</li>
+            </section>
+        </main>
+        <!--подвал-->
+        <footer class="footer">
+            <div class="footer-content">
+                <a href="https://github.com/stuff-by" target="_blank" class="footer-link">
+                    <img src="github-icon.png" alt="GitHub" width="24" class="footer-icon"> 
+                    GitHub
+                </a>
+                <span class="footer-year">© 2025</span>
+                <a href="https://rs.school/courses/javascript-ru" target="_blank" class="footer-link">
+                    <img src="rs-school-logo.svg" alt="RS school" width="24" class="footer-icon">
+                    JS / Front-end Course
+                </a>
+            </div>
+        </footer>
+
+    </div>
 </body>
-
 </html>
